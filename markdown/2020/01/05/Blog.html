@@ -4,20 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Tags | Dat255 - Deep learning engineering</title>
+<title>NLP | Dat255 - Deep learning engineering</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Tags" />
+<meta property="og:title" content="NLP" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Semester Project V22" />
-<meta property="og:description" content="Semester Project V22" />
-<link rel="canonical" href="https://thestiana.github.io/vigilant-telegram/categories/" />
-<meta property="og:url" content="https://thestiana.github.io/vigilant-telegram/categories/" />
+<meta name="description" content="V2022" />
+<meta property="og:description" content="V2022" />
+<link rel="canonical" href="https://thestiana.github.io/vigilant-telegram/markdown/2020/01/05/Blog.html" />
+<meta property="og:url" content="https://thestiana.github.io/vigilant-telegram/markdown/2020/01/05/Blog.html" />
 <meta property="og:site_name" content="Dat255 - Deep learning engineering" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-01-05T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Tags" />
+<meta property="twitter:title" content="NLP" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Semester Project V22","headline":"Tags","url":"https://thestiana.github.io/vigilant-telegram/categories/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2020-01-05T00:00:00-06:00","datePublished":"2020-01-05T00:00:00-06:00","description":"V2022","headline":"NLP","mainEntityOfPage":{"@type":"WebPage","@id":"https://thestiana.github.io/vigilant-telegram/markdown/2020/01/05/Blog.html"},"url":"https://thestiana.github.io/vigilant-telegram/markdown/2020/01/05/Blog.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/vigilant-telegram/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://thestiana.github.io/vigilant-telegram/feed.xml" title="Dat255 - Deep learning engineering" /><link rel="shortcut icon" type="image/x-icon" href="/vigilant-telegram/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -69,36 +70,64 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">NLP</h1><p class="page-description">V2022</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-01-05T00:00:00-06:00" itemprop="datePublished">
+        Jan 5, 2020
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
 
-<h2>Contents</h2>
-
-  
-  
-  
-
-  <ul>
-  
-    <li><a href="#markdown">markdown</a></li>
-  
-  </ul>
-
-  
-      <h3 id ="markdown"><i class="fas fa-tags category-tags-icon"></i></i> markdown</h3>
-      <a name="markdown"></a>
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <article class="archive-item">
-          <p class="post-meta post-meta-title"><a class="page-meta" href="/vigilant-telegram/markdown/2020/01/05/Blog.html">NLP</a>  • Jan 5, 2020</p>
-        </article>
+        <a class="category-tags-link" href="/vigilant-telegram/categories/#markdown">markdown</a>
         
       
-  
+      </p>
+    
 
+    </header>
 
+  <div class="post-content e-content" itemprop="articleBody">
+    <h1 id="natural-language-processing">Natural language processing</h1>
+<p>Natural Language Processing (NLP) is a subfield of linguistics and computer science and is used to give computers the ability to interpret and manipulate human language.
+There are many applications of NLP some of which are content categorization, translation, text generation, and sentiment analysis.
+While the field has existed for several decades, it is still fast-evolving, and breakthroughs still happen every year.</p>
 
+<h3 id="universal-language-model-fine-tuning---ulmfit">Universal Language Model Fine-tuning - ULMFit</h3>
+<p>When Jeremy Howard of FastAi published the paper <a href="https://arxiv.org/abs/1801.06146">Universal Language Model Fine-tuning for Text Classification</a> in 2018,
+this was probably how far the field had gotten.
+The idea proposed was a process of three stages of transfer learning.
+Using a general purpose language model as the pretrained model which is then fine-tuned on a target corpus, and lastly transfer learning it to a classification task which is also fine-tuned on target corpus.
+Language model has the objective of predicting the next word in a sentence,
+and being capable of handling both grammar and semantics.
+The process of training such a model is so called self-supervised learning.
+General language model are trained on a large corpus, in this case Wikipedia.
+The result is a pretrained model, which in this case is based on a AWD-LSTM architecture.
+However, different domains have different language styles.
+Text messages are mostly quite short and informal,
+research papers on the other hand are long and formal.
+Therefore, fine-tuning a pretrained language model on some target data should make it better at predicting the language style of its domain.</p>
 
-</div>
+<h3 id="transformers">Transformers</h3>
+<p>In later years transformers have become the ruling architecture for creating NLP models.
+RNN and LSTM which are the underlaying architecture of the language models in the ULMFit approach,
+relies on handling the data in sequence. Which means word for word (or more likely token for token).
+Which results in a rather slowed down training process.
+This is one of the things transformers are able to address.
+The transformer architecture allows the data pass in parallel, and train on whole sentences, which can greatly speed up the process.
+There are today many different models which builds upon the transformer architecture.
+One source for such models are the <a href="https://huggingface.co">Hugging Face</a> library.</p>
+
+  </div><a class="u-url" href="/vigilant-telegram/markdown/2020/01/05/Blog.html" hidden></a>
+</article>
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/vigilant-telegram/"></data>

@@ -71,13 +71,30 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p>This site is built with <a href="https://github.com/fastai/fastpages">fastpages</a>, An easy to use blogging platform with extra features for Jupyter Notebooks.</p>
+        <div class="home"><h1 id="sentiment-analysis-from-social-media">Sentiment analysis from social media</h1>
 
-<p><img src="/vigilant-telegram/images/diagram.png" alt="" title="https://github.com/fastai/fastpages" /></p>
+<h3 id="introduction">Introduction</h3>
 
-<p><a href="https://github.com/fastai/fastpages">fastpages</a> automates the process of creating blog posts via GitHub Actions, so you don’t have to fuss with conversion scripts.  A full list of features can be found on <a href="https://github.com/fastai/fastpages">GitHub</a>.</p>
+<h3 id="goals">Goals</h3>
+<ul>
+  <li>Construct sentiment analysis models based on the NLP techniques of fastai.</li>
+  <li>Gain solid experience with the objectives, challenges, and pitfalls of this approach to sentiment analysis.</li>
+  <li>Optional: Dig into more recent developments in NLP, specifically the use of Transformers, using the HuggingFace library.</li>
+</ul>
 
-<p>You can edit the <code class="language-plaintext highlighter-rouge">index.html</code> file to change this content.</p>
+<h3 id="methods-and-materials">Methods and materials</h3>
+
+<p>A major part of the project is to investigate a variety of data sets, as this is the best way to gain solid, generalizable experience. Here are some existing data sets to get you started (you should look for additional data sets yourself):</p>
+<ul>
+  <li><a href="https://nijianmo.github.io/amazon/index.html">Amazon Review Data</a>. See also URLs.AMAZON_REVIEWS and URLs.AMAZON_REVIEWS_POLARITY in fastai</li>
+  <li><a href="https://www.kaggle.com/crowdflower/twitter-airline-sentiment">Twitter US Airline Sentiment</a></li>
+  <li><a href="http://www.cs.jhu.edu/~mdredze/datasets/sentiment">Multi-Domain Sentiment Dataset</a></li>
+  <li><a href="http://archive.ics.uci.edu/ml/datasets/opinrank+review+dataset">OpinRank Review Dataset</a></li>
+</ul>
+
+<p>You are encouraged to construct your own data set by scraping one or more relevant internet sources.
+The Python libraries Beautiful Soup and Scrapy are worth investigating. Twitter is a relatively easy
+source for data, perhaps combined with efficient techniques for data labeling, for example <a href="https://github.com/snorkel-team/snorkel">Snorkel</a>.</p>
 
 <h1 id="posts">Posts</h1>
 

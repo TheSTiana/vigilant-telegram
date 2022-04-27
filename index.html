@@ -4,12 +4,25 @@ search_exclude: true
 image: images/logo.png
 ---
 
-This site is built with [fastpages](https://github.com/fastai/fastpages), An easy to use blogging platform with extra features for Jupyter Notebooks.
+# Sentiment analysis from social media
 
-![]({{site.baseurl}}/images/diagram.png "https://github.com/fastai/fastpages")
+### Introduction
 
-[fastpages](https://github.com/fastai/fastpages) automates the process of creating blog posts via GitHub Actions, so you don't have to fuss with conversion scripts.  A full list of features can be found on [GitHub](https://github.com/fastai/fastpages).  
+### Goals
+- Construct sentiment analysis models based on the NLP techniques of fastai. 
+- Gain solid experience with the objectives, challenges, and pitfalls of this approach to sentiment analysis.
+- Optional: Dig into more recent developments in NLP, specifically the use of Transformers, using the HuggingFace library.
 
-You can edit the `index.html` file to change this content.
+### Methods and materials
+
+A major part of the project is to investigate a variety of data sets, as this is the best way to gain solid, generalizable experience. Here are some existing data sets to get you started (you should look for additional data sets yourself):
+- [Amazon Review Data](https://nijianmo.github.io/amazon/index.html). See also URLs.AMAZON_REVIEWS and URLs.AMAZON_REVIEWS_POLARITY in fastai
+- [Twitter US Airline Sentiment](https://www.kaggle.com/crowdflower/twitter-airline-sentiment)
+- [Multi-Domain Sentiment Dataset](http://www.cs.jhu.edu/~mdredze/datasets/sentiment)
+- [OpinRank Review Dataset](http://archive.ics.uci.edu/ml/datasets/opinrank+review+dataset)
+
+You are encouraged to construct your own data set by scraping one or more relevant internet sources.
+The Python libraries Beautiful Soup and Scrapy are worth investigating. Twitter is a relatively easy
+source for data, perhaps combined with efficient techniques for data labeling, for example [Snorkel](https://github.com/snorkel-team/snorkel).
 
 # Posts

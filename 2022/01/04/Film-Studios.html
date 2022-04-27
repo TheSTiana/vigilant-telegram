@@ -1,0 +1,2045 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Film studio dataset | Dat255 - Deep learning engineering</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Film studio dataset" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Semester Project V22" />
+<meta property="og:description" content="Semester Project V22" />
+<link rel="canonical" href="https://thestiana.github.io/vigilant-telegram/2022/01/04/Film-Studios.html" />
+<meta property="og:url" content="https://thestiana.github.io/vigilant-telegram/2022/01/04/Film-Studios.html" />
+<meta property="og:site_name" content="Dat255 - Deep learning engineering" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-01-04T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Film studio dataset" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-01-04T00:00:00-06:00","datePublished":"2022-01-04T00:00:00-06:00","description":"Semester Project V22","headline":"Film studio dataset","mainEntityOfPage":{"@type":"WebPage","@id":"https://thestiana.github.io/vigilant-telegram/2022/01/04/Film-Studios.html"},"url":"https://thestiana.github.io/vigilant-telegram/2022/01/04/Film-Studios.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/vigilant-telegram/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://thestiana.github.io/vigilant-telegram/feed.xml" title="Dat255 - Deep learning engineering" /><link rel="shortcut icon" type="image/x-icon" href="/vigilant-telegram/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/vigilant-telegram/">Dat255 - Deep learning engineering</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/vigilant-telegram/about/">About Me</a><a class="page-link" href="/vigilant-telegram/search/">Search</a><a class="page-link" href="/vigilant-telegram/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Film studio dataset</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-01-04T00:00:00-06:00" itemprop="datePublished">
+        Jan 4, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      14 min read
+    
+</span></p>
+
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/TheSTiana/vigilant-telegram/tree/master/_notebooks/2022-01-04-Film-Studios.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/vigilant-telegram/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/TheSTiana/vigilant-telegram/master?filepath=_notebooks%2F2022-01-04-Film-Studios.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/vigilant-telegram/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/TheSTiana/vigilant-telegram/blob/master/_notebooks/2022-01-04-Film-Studios.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/vigilant-telegram/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2FTheSTiana%2Fvigilant-telegram%2Fblob%2Fmaster%2F_notebooks%2F2022-01-04-Film-Studios.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/vigilant-telegram/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-01-04-Film-Studios.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">glob</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">paths</span><span class="o">=</span><span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;Dreamworks&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;..\datasets\films\DreamWorks_5_2000.csv&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Disney&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;..\datasets\films\disney_5_2000.csv&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Marvel&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;..\datasets\films\marvel_5_2000.csv&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Studio Ghibli&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;..\datasets\films\studioGhibli_5_2000.csv&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Sony Pictures&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;..\datasets\films\SonyPictures_5_2000.csv&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Warner Bros&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;..\datasets\films\WarnerBros._5_2000.csv&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;DC&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;..\datasets\films\dc_5_2000.csv&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Pixar&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;..\datasets\films\pixar_5_2000.csv&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Lionsgate&quot;</span><span class="p">,</span> <span class="sa">r</span><span class="s2">&quot;..\datasets\films\Lionsgate_5_2000.csv&quot;</span><span class="p">)</span>
+<span class="p">]</span>
+
+<span class="n">li</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">studio</span><span class="p">,</span> <span class="n">path</span> <span class="ow">in</span> <span class="n">paths</span><span class="p">:</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+    <span class="n">df</span><span class="p">[</span><span class="s2">&quot;studio&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">studio</span>
+    <span class="n">li</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+
+<span class="n">df_studios</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span><span class="n">li</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_studios</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>username</th>
+      <th>name</th>
+      <th>profile_picture</th>
+      <th>replies</th>
+      <th>retweets</th>
+      <th>likes</th>
+      <th>is_retweet</th>
+      <th>posted_time</th>
+      <th>content</th>
+      <th>hashtags</th>
+      <th>mentions</th>
+      <th>images</th>
+      <th>videos</th>
+      <th>tweet_url</th>
+      <th>link</th>
+      <th>studio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2282</th>
+      <td>DisneyHotelBot</td>
+      <td>ディズニーホテル空室状況！</td>
+      <td>https://twitter.com/DisneyHotelBot/photo</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>False</td>
+      <td>2022-04-24T23:28:07+00:00</td>
+      <td>東京ディズニーシー・ホテルミラコスタの\n以下日程が空いています！part2\n\n2022...</td>
+      <td>['チケット', 'Disney', 'ディズニー']</td>
+      <td>[]</td>
+      <td>[]</td>
+      <td>[]</td>
+      <td>https://twitter.com/DisneyHotelBot/status/1518...</td>
+      <td>https://t.co/HtmjkaoHYp</td>
+      <td>Disney</td>
+    </tr>
+    <tr>
+      <th>6135</th>
+      <td>themanoftomorr7</td>
+      <td>themanoftomorrow</td>
+      <td>https://twitter.com/themanoftomorr7/photo</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>False</td>
+      <td>2022-04-24T15:11:31+00:00</td>
+      <td>Dylan O'Brien is nightwing!! #Nightwing \n@DCC...</td>
+      <td>['Nightwing']</td>
+      <td>['DCComics', 'warnerbros', 'wbpictures', 'wbd'...</td>
+      <td>['https://pbs.twimg.com/media/FRHk2KdXsAAo2Iy?...</td>
+      <td>[]</td>
+      <td>https://twitter.com/themanoftomorr7/status/151...</td>
+      <td>NaN</td>
+      <td>Warner Bros</td>
+    </tr>
+    <tr>
+      <th>6248</th>
+      <td>DCtamilFC</td>
+      <td>𝐃𝐂 𝐓𝐚𝐦𝐢𝐥 𝐅𝐂</td>
+      <td>https://twitter.com/DCtamilFC/photo</td>
+      <td>2</td>
+      <td>21</td>
+      <td>51</td>
+      <td>False</td>
+      <td>2022-04-24T12:26:02+00:00</td>
+      <td>Warner Bros. Pictures' presentation is on 4pm...</td>
+      <td>['TheFlash', 'BlackAdam']</td>
+      <td>['CinemaCon']</td>
+      <td>['https://pbs.twimg.com/media/FRG_CzxaIAAAdDY?...</td>
+      <td>[]</td>
+      <td>https://twitter.com/DCtamilFC/status/151820461...</td>
+      <td>NaN</td>
+      <td>Warner Bros</td>
+    </tr>
+    <tr>
+      <th>2271</th>
+      <td>ma_san100</td>
+      <td>まぁさん「100の冒険」</td>
+      <td>https://twitter.com/ma_san100/photo</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>False</td>
+      <td>2022-04-24T23:28:16+00:00</td>
+      <td>ウエストポーチ、一目惚れ\n\n#ひとりディズニー のお供にしたい\n\n#天国に持って行く...</td>
+      <td>['ひとりディズニー', '天国に持って行く思い出', 'ショップディズニー', 'ディズニ...</td>
+      <td>[]</td>
+      <td>[]</td>
+      <td>[]</td>
+      <td>https://twitter.com/ma_san100/status/151837127...</td>
+      <td>https://t.co/3I7umAwjnv</td>
+      <td>Disney</td>
+    </tr>
+    <tr>
+      <th>4106</th>
+      <td>sherwin_lui</td>
+      <td>Blastpoke</td>
+      <td>https://twitter.com/sherwin_lui/photo</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>False</td>
+      <td>2022-04-24T22:50:54+00:00</td>
+      <td>Any char walking across the main room&amp; opp is ...</td>
+      <td>[]</td>
+      <td>[]</td>
+      <td>[]</td>
+      <td>['https://video.twimg.com/tweet_video/FRI-21gX...</td>
+      <td>https://twitter.com/sherwin_lui/status/1518361...</td>
+      <td>NaN</td>
+      <td>Marvel</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_studios</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 8410 entries, 0 to 8409
+Data columns (total 16 columns):
+ #   Column           Non-Null Count  Dtype 
+---  ------           --------------  ----- 
+ 0   username         8410 non-null   object
+ 1   name             8336 non-null   object
+ 2   profile_picture  8410 non-null   object
+ 3   replies          8410 non-null   int64 
+ 4   retweets         8410 non-null   int64 
+ 5   likes            8410 non-null   int64 
+ 6   is_retweet       8410 non-null   bool  
+ 7   posted_time      8410 non-null   object
+ 8   content          8216 non-null   object
+ 9   hashtags         8410 non-null   object
+ 10  mentions         8410 non-null   object
+ 11  images           8410 non-null   object
+ 12  videos           8410 non-null   object
+ 13  tweet_url        8410 non-null   object
+ 14  link             749 non-null    object
+ 15  studio           8410 non-null   object
+dtypes: bool(1), int64(3), object(12)
+memory usage: 993.9+ KB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Tried to download 2000 tweets related to the keywords Dreamworks, Disney, Marvel, Studio Ghibli, Sony Pictures, Warner Bros, DC, Pixar and Lionsgate, which are all related to some film studio. As seen above the dataset consist of only 8410 data points.</p>
+<p>The value counts in the cell below show how the data is distributed across the studios. Which shows that some keywords worked well and others did not really work at all.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;studio&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Lionsgate    169
+Name: studio, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>I chose to reduce the dataset to only keep the <code>content</code> and <code>studio</code> columns.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df_studios</span><span class="p">[[</span><span class="s2">&quot;content&quot;</span><span class="p">,</span> <span class="s2">&quot;studio&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 8410 entries, 0 to 8409
+Data columns (total 2 columns):
+ #   Column   Non-Null Count  Dtype 
+---  ------   --------------  ----- 
+ 0   content  8216 non-null   object
+ 1   studio   8410 non-null   object
+dtypes: object(2)
+memory usage: 131.5+ KB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dropping possible Nan and duplicates.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span><span class="o">.</span><span class="n">values</span><span class="p">))</span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 8083 entries, 0 to 8409
+Data columns (total 2 columns):
+ #   Column   Non-Null Count  Dtype 
+---  ------   --------------  ----- 
+ 0   content  8074 non-null   object
+ 1   studio   8083 non-null   object
+dtypes: object(2)
+memory usage: 189.4+ KB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>content</th>
+      <th>studio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>6817</th>
+      <td>Turning Red - Estranhamente Vermelho no TV Tim...</td>
+      <td>Pixar</td>
+    </tr>
+    <tr>
+      <th>2189</th>
+      <td>Disneyland but not Disney World.</td>
+      <td>Disney</td>
+    </tr>
+    <tr>
+      <th>5681</th>
+      <td>@SonyPictures\n @TomHolland1996\n @Zendaya\n @...</td>
+      <td>Sony Pictures</td>
+    </tr>
+    <tr>
+      <th>7781</th>
+      <td>#pixar</td>
+      <td>Pixar</td>
+    </tr>
+    <tr>
+      <th>3847</th>
+      <td>Eu gosto de alguns filmes da Marvel, mas acho ...</td>
+      <td>Marvel</td>
+    </tr>
+    <tr>
+      <th>1086</th>
+      <td>dps de heartstopper eu to esperando ansiosamen...</td>
+      <td>Disney</td>
+    </tr>
+    <tr>
+      <th>6237</th>
+      <td>The people: Warner Bros, Bring Johnny Depp bac...</td>
+      <td>Warner Bros</td>
+    </tr>
+    <tr>
+      <th>4080</th>
+      <td>acabei de ver um tweet dc vs marvel e lembrei ...</td>
+      <td>Marvel</td>
+    </tr>
+    <tr>
+      <th>5538</th>
+      <td>i wanna go to the studio ghibli exhibit so bad...</td>
+      <td>Studio Ghibli</td>
+    </tr>
+    <tr>
+      <th>5536</th>
+      <td>my beloved friends as iconic studio ghibli sce...</td>
+      <td>Studio Ghibli</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Detect-language">Detect language<a class="anchor-link" href="#Detect-language"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As I was rather awkwardly reminded when working on the "France" dataset, Twitter is a multilingual platform. So for the next part, I will work on detecting which language a tweet is written in. While creating a dataset with multiple languages could be interesting, it is likely to be rather skewed distributed.</p>
+<p>At first, I tried to use TextBlob to detect the language, but it seemed the library had some issues. So I tried to use the langdetect library which said it supports 55 languages. However, trying to detect the language of the tweets directly led to some errors. Mainly an Exception saying "No features in text", which was not something I had stumbled upon in the "France" dataset.</p>
+<p>I tried to do some preprocessing of the text to make the language detection work. First I removed tweets with less than 5 whitespaces. Then I realized that trying to detect the language of anything which does not contain any alphabet did not work, so I tried to remove those.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">split</span><span class="p">()</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">len</span><span class="p">()</span><span class="o">.</span><span class="n">ge</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 7315 entries, 0 to 8408
+Data columns (total 2 columns):
+ #   Column   Non-Null Count  Dtype 
+---  ------   --------------  ----- 
+ 0   content  7315 non-null   object
+ 1   studio   7315 non-null   object
+dtypes: object(2)
+memory usage: 171.4+ KB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">re</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">contains_alphabets</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">bool</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="s2">&quot;^(?=.*[a-zA-Z])&quot;</span><span class="p">,</span> <span class="n">s</span><span class="p">))</span>
+
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;contains_alphabets&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">contains_alphabets</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;contains_alphabets&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True     7231
+False      84
+Name: contains_alphabets, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">contains_alphabets</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>However, I still got the same exception. So I tried some other possible solutions:</p>
+<ul>
+<li>remove punctuation</li>
+<li>remove emoji</li>
+<li>remove html</li>
+<li>remove urls</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">string</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">remove_punctuation</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>
+    <span class="n">table</span> <span class="o">=</span> <span class="nb">str</span><span class="o">.</span><span class="n">maketrans</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">string</span><span class="o">.</span><span class="n">punctuation</span><span class="p">)</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="n">word</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">table</span><span class="p">)</span> <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">]</span> <span class="c1"># removes Punctuation</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">text</span>
+
+<span class="k">def</span> <span class="nf">remove_html</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">html</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&lt;.*?&gt;&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">html</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">text</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">remove_url</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;https?://\S+|www\.\S+&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">url</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="n">text</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">remove_emoji</span><span class="p">(</span><span class="n">string</span><span class="p">):</span>
+    <span class="n">emoji_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;[&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U0001F600</span><span class="s2">-</span><span class="se">\U0001F64F</span><span class="s2">&quot;</span>  <span class="c1"># emoticons</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U0001F300</span><span class="s2">-</span><span class="se">\U0001F5FF</span><span class="s2">&quot;</span>  <span class="c1"># symbols &amp; pictographs</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U0001F680</span><span class="s2">-</span><span class="se">\U0001F6FF</span><span class="s2">&quot;</span>  <span class="c1"># transport &amp; map symbols</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U0001F1E0</span><span class="s2">-</span><span class="se">\U0001F1FF</span><span class="s2">&quot;</span>  <span class="c1"># flags (iOS)</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U00002500</span><span class="s2">-</span><span class="se">\U00002BEF</span><span class="s2">&quot;</span>  <span class="c1"># chinese char</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U00002702</span><span class="s2">-</span><span class="se">\U000027B0</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U00002702</span><span class="s2">-</span><span class="se">\U000027B0</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U000024C2</span><span class="s2">-</span><span class="se">\U0001F251</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U0001f926</span><span class="s2">-</span><span class="se">\U0001f937</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\U00010000</span><span class="s2">-</span><span class="se">\U0010ffff</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u2640</span><span class="s2">-</span><span class="se">\u2642</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u2600</span><span class="s2">-</span><span class="se">\u2B55</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u200d</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u23cf</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u23e9</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u231a</span><span class="s2">&quot;</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\ufe0f</span><span class="s2">&quot;</span>  <span class="c1"># dingbats</span>
+                               <span class="sa">u</span><span class="s2">&quot;</span><span class="se">\u3030</span><span class="s2">&quot;</span>
+                               <span class="s2">&quot;]+&quot;</span><span class="p">,</span> <span class="n">flags</span><span class="o">=</span><span class="n">re</span><span class="o">.</span><span class="n">UNICODE</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">emoji_pattern</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">remove_emoji</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">remove_url</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">remove_html</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">remove_punctuation</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>But even after having tried those methods, the exception prevailed. So I decided to use the unidecode library to force it to be ASCII. While not being ideal, made the exception go away. Which finally gave me some overview over the detected languages.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">unidecode</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">make_unidecode</span><span class="p">(</span><span class="n">raw_text</span><span class="p">):</span>
+    <span class="n">processed</span> <span class="o">=</span> <span class="n">unidecode</span><span class="o">.</span><span class="n">unidecode</span><span class="p">(</span><span class="n">raw_text</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">processed</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">make_unidecode</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>content</th>
+      <th>studio</th>
+      <th>contains_alphabets</th>
+      <th>pre_text</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2850</th>
+      <td>Lost cat Marvel in Rockford, MI US (49341) #lo...</td>
+      <td>Marvel</td>
+      <td>True</td>
+      <td>Lost cat Marvel in Rockford MI US 49341 lostcat</td>
+    </tr>
+    <tr>
+      <th>1494</th>
+      <td>can I say yes?  I have high enough confidence ...</td>
+      <td>Disney</td>
+      <td>True</td>
+      <td>can I say yes I have high enough confidence to...</td>
+    </tr>
+    <tr>
+      <th>6920</th>
+      <td>Check out this listing I just added to my #Pos...</td>
+      <td>Pixar</td>
+      <td>True</td>
+      <td>Check out this listing I just added to my Posh...</td>
+    </tr>
+    <tr>
+      <th>6575</th>
+      <td>Not just you, either.\nAnd the Warner Bros. ca...</td>
+      <td>Warner Bros</td>
+      <td>True</td>
+      <td>Not just you either And the Warner Bros cartoo...</td>
+    </tr>
+    <tr>
+      <th>1128</th>
+      <td>@Disney\n You forgot Disney supports forced in...</td>
+      <td>Disney</td>
+      <td>True</td>
+      <td>Disney You forgot Disney supports forced indoc...</td>
+    </tr>
+    <tr>
+      <th>1975</th>
+      <td>...regs, etc. Disney losing it's privs has vir...</td>
+      <td>Disney</td>
+      <td>True</td>
+      <td>regs etc Disney losing its privs has virtually...</td>
+    </tr>
+    <tr>
+      <th>7809</th>
+      <td>Os incríveis eh o melhor filme da pixar</td>
+      <td>Pixar</td>
+      <td>True</td>
+      <td>Os incriveis eh o melhor filme da pixar</td>
+    </tr>
+    <tr>
+      <th>7805</th>
+      <td>PIXAR NO TE VOY A PERDONAR CÓMO TRAUMES A MÍ H...</td>
+      <td>Pixar</td>
+      <td>True</td>
+      <td>PIXAR NO TE VOY A PERDONAR COMO TRAUMES A MI H...</td>
+    </tr>
+    <tr>
+      <th>5321</th>
+      <td>oh to be one of them studio ghibli girlies who...</td>
+      <td>Studio Ghibli</td>
+      <td>True</td>
+      <td>oh to be one of them studio ghibli girlies who...</td>
+    </tr>
+    <tr>
+      <th>1268</th>
+      <td>Ron DeSantis’s attack on Disney is obviously u...</td>
+      <td>Disney</td>
+      <td>True</td>
+      <td>Ron DeSantis's attack on Disney is obviously u...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">langdetect</span> <span class="kn">import</span> <span class="n">detect</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;language&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;pre_text&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">detect</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;language&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>en    5358
+pt     670
+es     571
+fr     120
+it     105
+ca      83
+id      69
+de      57
+af      24
+et      23
+so      17
+nl      17
+tr      16
+da      14
+tl      12
+no      10
+cy       9
+ro       8
+sl       8
+pl       8
+sv       5
+hr       5
+sw       5
+hu       4
+lt       3
+cs       3
+fi       3
+sk       2
+lv       1
+vi       1
+Name: language, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Since I was not too happy with that solution I tried to use the googletrans library to detect a language. Which was considerably slower, using 20 minutes on something langdetect did in half a minute. Though, it worked on the unaltered text. As the value count shows, goolgetrans detects more languages. Their estimation of how many tweets were English was quite similar. I decided to only go for the rows where they agreed.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">googletrans</span> <span class="kn">import</span> <span class="n">Translator</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">detected_language</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">detector</span> <span class="o">=</span> <span class="n">Translator</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">detector</span><span class="o">.</span><span class="n">detect</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">.</span><span class="n">lang</span>
+<span class="n">df</span><span class="p">[</span><span class="s2">&quot;language_content&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s2">&quot;content&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">detected_language</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;language_content&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>en             5376
+pt              777
+es              614
+fr              125
+id               61
+ja               59
+it               40
+de               28
+ca               25
+th               19
+tr               17
+tl               12
+pl               10
+ru                7
+ar                7
+nl                4
+ko                4
+el                4
+da                3
+su                3
+hi                3
+bn                2
+fi                2
+ms                2
+[es, pt]          2
+no                1
+sk                1
+si                1
+[ms, id]          1
+hu                1
+[id, jw]          1
+[es, ro]          1
+[mr, hi]          1
+ro                1
+ig                1
+fa                1
+[ja, zh-CN]       1
+bg                1
+[pt, en]          1
+[en, el]          1
+af                1
+gu                1
+[hi, mr]          1
+[en, fr]          1
+[en, da]          1
+cs                1
+rw                1
+sv                1
+te                1
+kn                1
+Name: language_content, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;language&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;en&quot;</span><span class="p">))</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&quot;language_content&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;en&quot;</span><span class="p">))]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span> <span class="o">=</span> <span class="n">df_en</span><span class="p">[[</span><span class="s2">&quot;content&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>3099</th>
+      <td>Watching No Way Home for the first time since seeing it in theaters. Still the best Marvel film to date</td>
+    </tr>
+    <tr>
+      <th>8159</th>
+      <td>2 days until I can watch Turning Red! #Disney #Pixar #TurningRed</td>
+    </tr>
+    <tr>
+      <th>6163</th>
+      <td>Gonna get a platinum trophy as part of my mid year bucket list\n\n#legostarwars #starwars #theforceawakens #howiplaystation #playstation #playstationau #ps4 #bucketlist #starwarstheforceawakens #warnerbros #ttgames #playstation4</td>
+    </tr>
+    <tr>
+      <th>3268</th>
+      <td>I like marvel movies too, just not as much as others. I think true cinema is something that stays with you, not a black and white Albanian film from the pov of a worm.</td>
+    </tr>
+    <tr>
+      <th>1497</th>
+      <td>23,95€   Disney Classic Games Collection: The Jungle Book, Aladdin, and The Lion King - NSW https://amzn.to/3EIb11M a través de \n@amazon</td>
+    </tr>
+    <tr>
+      <th>6686</th>
+      <td>@alioverse\n #muchmeow 3D animated NFTs from Artists with previous works done for Disney, Pixar and Dreamworks.</td>
+    </tr>
+    <tr>
+      <th>6459</th>
+      <td>@warnerbros\n @hbomax\n please reconsider the Boondocks revival.</td>
+    </tr>
+    <tr>
+      <th>7605</th>
+      <td>But you can’t make a good argument that superman’s race is integral to the character. Hence we’re seeing diversity in these traditional roles, ie The Zods are black in the Krypton show and Young Justice, and they’re tossing around the idea of a black Superman.</td>
+    </tr>
+    <tr>
+      <th>2947</th>
+      <td>JRJR is still one of the VERY best Spidey artists out there (especially since he seems to be over his tiny ankles phase). Bold cinematic compositions with a dash of JRSR and Kirby still peeping out here and there. JR will always be a bright star in the comics cosmos.</td>
+    </tr>
+    <tr>
+      <th>1494</th>
+      <td>can I say yes?  I have high enough confidence to say that this is a disney princess! you’re not wrong, oppa! and how about you? are you some kind of prince or something?</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 5245 entries, 0 to 8408
+Data columns (total 1 columns):
+ #   Column   Non-Null Count  Dtype 
+---  ------   --------------  ----- 
+ 0   content  5245 non-null   object
+dtypes: object(1)
+memory usage: 82.0+ KB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>5245</td>
+    </tr>
+    <tr>
+      <th>unique</th>
+      <td>5170</td>
+    </tr>
+    <tr>
+      <th>top</th>
+      <td>no words. Make it happen. #start #change #now #justiceforjohnnydepp #johnnydepp #istandwithjohnnydepp #justicereform \n@disney\n @warnerbrosentertainment \n@sonypictures\n @paramountpics\n @universalpictures @columbiapictures \n@lionsgate\n @dreamworks\n @theacademy\n @sagaftra</td>
+    </tr>
+    <tr>
+      <th>freq</th>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Label-data">Label data<a class="anchor-link" href="#Label-data"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Since the gathered data was unlabeled I wanted to try and explore possible ways of labeling it. Most of my time was used exploring the Snorkel library. Their idea is to create several labeling functions where domain information is injected, and then automatically estimate each function's accuracy and correlation. Then their estimate is combined to determine output labels. However, this relies on having some domain knowledge and an idea of what might indicate each label. Which I do not have, nor wanted to use the time to determine. What I found was that most of their examples with labeling polarity and sentiment relied on a library named TextBlob (the same I tried to use to detect languages). So I decided to explore using that library as a possibility.</p>
+<blockquote><p>The sentiment property returns a namedtuple of the form Sentiment(polarity, subjectivity). The polarity score is a float within the range [-1.0, 1.0]. The subjectivity is a float within the range [0.0, 1.0] where 0.0 is very objective and 1.0 is very subjective.</p>
+</blockquote>
+<p>So after having extracted the sentiment from the tweet, thresholds are needed to sort them accordingly.</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">textblob</span> <span class="kn">import</span> <span class="n">TextBlob</span>
+<span class="kn">from</span> <span class="nn">textblob.sentiments</span> <span class="kn">import</span> <span class="n">NaiveBayesAnalyzer</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span><span class="p">[</span><span class="s2">&quot;score&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="o">.</span><span class="mi">0</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">df_en</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+    <span class="n">score</span> <span class="o">=</span> <span class="n">TextBlob</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">df_en</span><span class="o">.</span><span class="n">at</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;score&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">score</span><span class="o">.</span><span class="n">sentiment</span><span class="o">.</span><span class="n">polarity</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>content</th>
+      <th>score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Oh man, look at Dreamworks, releasing movies with really cool animation styles! This looks amazing! And Trolls 2 had great animation before it too!</td>
+      <td>0.729167</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Don’t go past this 1/1 \n@alioverse\n #muchmeow 3D animated NFTs from Artists with previous works done for Disney, Pixar and Dreamworks.</td>
+      <td>-0.208333</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Why does he do the dreamworks face in every photo</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>i can't believe jerma is the purple man from hit dreamworks movie home</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>@alioverse\n #muchmeow 3D animated NFTs from Artists with previous works done for Disney, Pixar and Dreamworks.</td>
+      <td>-0.166667</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Int64Index: 5245 entries, 0 to 8408
+Data columns (total 2 columns):
+ #   Column   Non-Null Count  Dtype  
+---  ------   --------------  -----  
+ 0   content  5245 non-null   object 
+ 1   score    5245 non-null   float64
+dtypes: float64(1), object(1)
+memory usage: 252.0+ KB
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">polarity_to_label</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;=</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;negative&quot;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">):</span> 
+        <span class="k">return</span> <span class="s2">&quot;neutral&quot;</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s2">&quot;positive&quot;</span>
+
+<span class="n">df_en</span><span class="p">[</span><span class="s2">&quot;label&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_en</span><span class="p">[</span><span class="s2">&quot;score&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">polarity_to_label</span><span class="p">(</span><span class="n">x</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span><span class="p">[</span><span class="s2">&quot;label&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>positive    2580
+neutral     1699
+negative     966
+Name: label, dtype: int64</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span> <span class="o">=</span> <span class="n">df_en</span><span class="p">[[</span><span class="s2">&quot;content&quot;</span><span class="p">,</span> <span class="s2">&quot;label&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s2">&quot;display.max_colwidth&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>content</th>
+      <th>label</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2402</th>
+      <td>Disney employs 80,000 Floridians, they most certainly can make a stand to protect their civil rights\n\nAlso makes good business sense - they benefit from a happy pool of potential employees</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>6741</th>
+      <td>ok I caught up on another Pixar and yeah that's quite a concept for the mogul's house the family use in The Incredibles 2. not clear what really holds anything up though. also looks like a nightmare for heating in winter, and A/C in summer</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>4675</th>
+      <td>Maybe not in the cinemas but MARVEL HEROES are definitely in the house</td>
+      <td>neutral</td>
+    </tr>
+    <tr>
+      <th>4808</th>
+      <td>I took a walk in Koganei, where Studio Ghibli is located. It is an area with many attractions such as a nursery school for the staff's children and Hayao Miyazaki's atelier.\n#studioghibli #hayaomiyazaki #totoro\n\nhttps://mtlnk.net/j_s%253A%252F%252Fwww.bura-bura-tv.com%252F139…</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>6055</th>
+      <td>And Warner bros large mint projects. They bring new customers to the marky</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>8011</th>
+      <td>Also Pixar back in 1988 wasn’t as big as it is now.</td>
+      <td>neutral</td>
+    </tr>
+    <tr>
+      <th>7149</th>
+      <td>How sick would it be if Disney/Pixar did a 4*Town virtual concert residency at Walt Disney World in Florida?</td>
+      <td>negative</td>
+    </tr>
+    <tr>
+      <th>7584</th>
+      <td>by your logic we are canon to the mcu, and so is dc , and pixar, and dreamworks, and illumination...</td>
+      <td>neutral</td>
+    </tr>
+    <tr>
+      <th>3711</th>
+      <td>Lmao. Making exactly what everyone is asking for is all the time is lame af. That's why the entertainment industry utterly lacks creativity right now. To many focus groups, to much pandering to the market.\n\nMarvel movie after marvel movie, marvel games gonna end up much the same.</td>
+      <td>positive</td>
+    </tr>
+    <tr>
+      <th>7097</th>
+      <td>To infinity and beyond! \nBlast off with our newest legos for “Lightyear”!\n\n\n\n#buzzlightyear #lightyear #disney #pixar #toystory #space #barnesandnoble #142bn</td>
+      <td>neutral</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_en</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="sa">r</span><span class="s2">&quot;../datasets/studio_data.csv&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+</p>
+    </details>
+</div>
+    
+
+</div>
+
+
+
+  </div><a class="u-url" href="/vigilant-telegram/2022/01/04/Film-Studios.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/vigilant-telegram/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/vigilant-telegram/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/vigilant-telegram/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Semester Project V22</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>

@@ -44,6 +44,17 @@
         
     
   
+    
+        ,"post4": {
+            "title": "Blog",
+            "content": "Natural language processing . Natural Language Processing (NLP) is a subfield of linguistics and computer science and is used to give computers the ability to interpret and manipulate human language. There are many applications of NLP some of which are content categorization, translation, text generation, and sentiment analysis. While the field has existed for several decades, it is still fast-evolving, and breakthroughs still happen every year. . Universal Language Model Fine-tuning - ULMFit . When Jeremy Howard of FastAi published the paper Universal Language Model Fine-tuning for Text Classification in 2018, this was probably how far the field had gotten. The idea proposed was a process of three stages of transfer learning. Using a general purpose language model as the pretrained model which is then fine-tuned on a target corpus, and lastly transfer learning it to a classification task which is also fine-tuned on target corpus. Language model has the objective of predicting the next word in a sentence, and being capable of handling both grammar and semantics. The process of training such a model is so called self-supervised learning. General language model are trained on a large corpus, in this case Wikipedia. The result is a pretrained model, which in this case is based on a AWD-LSTM architecture. However, different domains have different language styles. Text messages are mostly quite short and informal, research papers on the other hand are long and formal. Therefore, fine-tuning a pretrained language model on some target data should make it better at predicting the language style of its domain. . Transformers . In later years transformers have become the ruling architecture for creating NLP models. RNN and LSTM which are the underlaying architecture of the language models in the ULMFit approach, relies on handling the data in sequence. Which means word for word (or more likely token for token). Which results in a rather slowed down training process. This is one of the things transformers are able to address. The transformer architecture allows the data pass in parallel, and train on whole sentences, which can greatly speed up the process. There are today many different models which builds upon the transformer architecture. One source for such models are the Hugging Face library. .",
+            "url": "https://thestiana.github.io/vigilant-telegram/2020/01/05/Blog.html",
+            "relUrl": "/2020/01/05/Blog.html",
+            "date": " • Jan 5, 2020"
+        }
+        
+    
+  
 
   
   

@@ -6,8 +6,8 @@
 
 
 
-# Link to site
-
+# Link to blog site
 https://TheSTiana.github.io/vigilant-telegram/
 
-_powered by [fastpages](https://github.com/fastai/fastpages)_
+# Link to repository with both notebooks and datasets
+https://github.com/TheSTiana/literate-adventure
